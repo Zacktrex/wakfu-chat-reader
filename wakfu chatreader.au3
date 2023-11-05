@@ -28,7 +28,7 @@ WinSetOnTop($hGUI, "", $WINDOWS_ONTOP)
 Dim $aChatlog, $TotalLine ,$count
 
 While 1
-$chatlog ="C:\Users\"&@UserName&"\AppData\Roaming\zaap\wakfu\logs\wakfu_chat.log"
+$chatlog ="C:\Users\"&@UserName&"\AppData\Roaming\zaap\gamesLogs\wakfu\logs\wakfu_chat.log"
 $TimeStamp = FileGetTime($chatlog, 0, 1)
 If Not _FileReadToArray($chatlog, $aChatlog) Then
    MsgBox(4096,"Error", " Error reading log to Array     error:" & @error)
